@@ -26,21 +26,18 @@ public class FactIteration {
 
     public static BigInteger factorialIteration(int value) {
         BigInteger result = BigInteger.ONE;
-        if (value == 0 || value == 1)
-        {
+        if (value == 0 || value == 1) {
             return BigInteger.ONE;
-        }
-        else
-        {
-            for (int i = 2; i <= value; i++)
+        } else {
+            for (int i = 2; i <= value; i++) {
                 result = result.multiply(BigInteger.valueOf(i));
+            }
             return result;
         }
     }
 
     public static BigInteger factorialRecursion(int value) {
-        if (value <= 1)
-        {
+        if (value <= 1) {
             return BigInteger.ONE;
         }
         return BigInteger.valueOf(value).multiply(factorialRecursion(value - 1));
