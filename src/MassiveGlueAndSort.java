@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MassiveGlueAndSort {
@@ -10,9 +9,8 @@ public class MassiveGlueAndSort {
 
         int[] myArray = mergeAndSort(frst,sec );
 
-        for (int i = 0; i < myArray.length; i++)
-        {
-            System.out.print(myArray[i] + " ");
+        for (int j : myArray) {
+            System.out.print(j + " ");
 
         }
 
