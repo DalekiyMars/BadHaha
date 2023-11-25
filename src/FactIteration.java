@@ -3,25 +3,19 @@ import java.util.Scanner;
 
 public class FactIteration {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         Scanner introducedStr = new Scanner(System.in);
         int enteredNum = -1;
-        try
-        {
-            while(enteredNum < 0)
-            {
+        try {
+            while(enteredNum < 0) {
                 System.out.println("Enter positive number!\n");
                 enteredNum = introducedStr.nextInt();
             }
             System.out.println("Your result using iterations= " + factorialIteration(enteredNum));
             System.out.println("Your result using recursions= " + factorialRecursion(enteredNum));
-        }
-        catch (Exception e)
-        {
+        } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-
     }
 
     public static BigInteger factorialIteration(int value) {
