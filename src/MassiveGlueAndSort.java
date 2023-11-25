@@ -4,10 +4,10 @@ public class MassiveGlueAndSort {
 
     public static void main(String[] args)
     {
-        int [] frst ={};
+        int [] first ={};
         int[] sec = {1, 4, 3};
 
-        int[] myArray = mergeAndSort(frst,sec );
+        int[] myArray = mergeAndSort(first,sec );
 
         for (int j : myArray) {
             System.out.print(j + " ");
